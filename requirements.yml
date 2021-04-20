@@ -1,0 +1,15 @@
+# Install a role from a specific git branch
+- name: docker_install
+  src: https://github.com/EfimovEO/ansible_role_docker_install.git
+  version: origin/main
+
+- name: nginx
+  src: https://github.com/EfimovEO/ansible_role_nginx.git
+  version: origin/main
+
+- name: web_app         
+  src: https://github.com/EfimovEO/ansible_role_web_app.git         
+  version: origin/main
+
+
+
