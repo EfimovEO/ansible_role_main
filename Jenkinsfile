@@ -3,7 +3,7 @@ pipeline {
     stages {
 	    stage('DEPLOY') {
             steps {
-                sh "ansible-galaxy install -r requirements.yml"
+                sh "ansible-galaxy install  --roles-path ./ -r requirements.yml"
                 ansiblePlaybook(
                     credentialsId: 'ansible_exam2',
                     inventory: 'hosts',
